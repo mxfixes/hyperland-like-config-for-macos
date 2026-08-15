@@ -38,7 +38,6 @@ The script will:
 
 | Keybind              | Action                                   |
 |-----------------------|-------------------------------------------|
-| `Cmd+Shift+Q`          | Toggle floating/tiled on focused window   |
 | `Cmd+Alt+B`            | Open new window of focused app            |
 | `Alt+H/J/K/L`          | Focus window (west/south/north/east)      |
 | `Alt+1` / `Alt+2`      | Move focused window to space 1 / 2        |
