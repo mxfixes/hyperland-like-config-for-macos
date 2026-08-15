@@ -38,7 +38,6 @@ The script will:
 
 | Keybind              | Action                                   |
 |-----------------------|-------------------------------------------|
-| `Cmd+Alt+B`            | Open new window of focused app            |
 | `Alt+H/J/K/L`          | Focus window (west/south/north/east)      |
 | `Alt+1` / `Alt+2`      | Move focused window to space 1 / 2        |
 | `Alt+B`                | Toggle SketchyBar visibility              |
@@ -46,8 +45,6 @@ The script will:
 | `Shift+Alt+F`          | Stop yabai                                |
 | `Right Shift + /`      | Reload skhd + yabai + sketchybar configs  |
 
-**Note:** `Cmd+Shift+Q` conflicts with macOS's default "Log Out" shortcut.
-Disable it manually: System Settings → Keyboard → Keyboard Shortcuts → uncheck "Log Out".
 
 ## pacman wrapper
 
