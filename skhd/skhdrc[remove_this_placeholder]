@@ -1,0 +1,25 @@
+# Toggle floating/tiling on focused window
+shift + cmd - q : yabai -m window --toggle float
+
+# Open a new window of the currently focused app
+cmd + alt - b : osascript -e 'tell application "System Events" to set frontApp to name of first application process whose frontmost is true' -e 'tell application frontApp to make new window' 2>/dev/null || osascript -e 'tell application "System Events" to keystroke "n" using command down'
+
+# Focus windows
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+
+# Move windows to spaces
+alt - 1 : yabai -m window --space 1
+alt - 2 : yabai -m window --space 2
+
+# Toggle SketchyBar visibility
+alt - b : sketchybar --bar hidden=toggle
+
+# Yabai on/off service toggle
+alt - f         : yabai --start-service
+shift + alt - f : yabai --stop-service
+
+# Reload skhd + yabai + sketchybar config (right shift + /)
+rshift - / : skhd --restart-service && yabai --restart-service && sketchybar --reload

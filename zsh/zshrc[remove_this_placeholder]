@@ -1,0 +1,50 @@
+# OpenJDK 21 Setup
+export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
+export JAVA_HOME="/opt/homebrew/opt/openjdk@21"
+
+# GNU coreutils (uncomment after running install.sh with coreutils enabled)
+# export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+# export PATH="/opt/homebrew/opt/findutils/libexec/gnubin:$PATH"
+# export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+# export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
+
+# Starship prompt (uncomment if installed)
+# eval "$(starship init zsh)"
+
+# Map pacman commands to brew equivalents on macOS
+pacman() {
+  case "$1" in
+    -S|--sync)
+      shift
+      brew install "$@"
+      ;;
+    -Syu|-Sy)
+      brew update && brew upgrade
+      if [ $# -gt 1 ]; then
+        shift
+        brew install "$@"
+      fi
+      ;;
+    -R|-Rs|--remove)
+      shift
+      brew uninstall "$@"
+      ;;
+    -Ss|--search)
+      shift
+      brew search "$@"
+      ;;
+    -Si|-Qi|--info)
+      shift
+      brew info "$@"
+      ;;
+    -Qe|--list)
+      brew list
+      ;;
+    -Sc|-Scc)
+      brew cleanup
+      ;;
+    *)
+      brew "$@"
+      ;;
+  esac
+}
