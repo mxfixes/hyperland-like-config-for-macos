@@ -51,9 +51,9 @@ brew install --cask kitty
 
 # 4. Symlink configs
 mkdir -p ~/.config/kitty
-link "$DOTFILES_DIR/zsh/.zshrc" ~/.zshrc
-link "$DOTFILES_DIR/yabai/.yabairc" ~/.yabairc
-link "$DOTFILES_DIR/skhd/.skhdrc" ~/.skhdrc
+link "$DOTFILES_DIR/zsh/zshrc[remove_this_placeholder]" ~/.zshrc
+link "$DOTFILES_DIR/yabai/yabairc[remove_this_placeholder]" ~/.yabairc
+link "$DOTFILES_DIR/skhd/skhdrc[remove_this_placeholder]" ~/.skhdrc
 link "$DOTFILES_DIR/kitty/kitty.conf" ~/.config/kitty/kitty.conf
 chmod +x ~/.yabairc
 
