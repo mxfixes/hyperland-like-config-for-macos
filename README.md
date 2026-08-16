@@ -23,9 +23,7 @@ config is intentionally excluded from this repo (kept local/cosmetic only).
 - [Homebrew](https://brew.sh) installed
 
 ## Install
-
-run the install.sh file it will install or download and run the dmg
-UPDATE new file to download called dotfile installer which is just a gui menu one so it is recamended for most oeople but it is still v1 like the others
+install using install.sh or the relesed version the version in releses is recamended as it has a gui interface while the install.sh wil just run without removing things that will break this overall just use the 2.0 installer
 The script will:
 1. Install Homebrew if missing
 2. Tap `koekeishiya/formulae` (yabai, skhd) and `FelixKratz/formulae` (sketchybar)
