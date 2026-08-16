@@ -24,7 +24,7 @@ config is intentionally excluded from this repo (kept local/cosmetic only).
 
 ## Install
 
-run the install.sh file it will install
+run the install.sh file it will install or download and run the dmg
 
 The script will:
 1. Install Homebrew if missing
