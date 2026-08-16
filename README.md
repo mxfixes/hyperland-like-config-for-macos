@@ -19,13 +19,13 @@ config is intentionally excluded from this repo (kept local/cosmetic only).
 
 ## Requirements
 
-- macOS on Apple Silicon (M1/M2/M3)
+- macOS on Apple Silicon (M1/M2/M3 etc ect)
 - [Homebrew](https://brew.sh) installed
 
 ## Install
 
 run the install.sh file it will install or download and run the dmg
-
+UPDATE new file to download called dotfile installer which is just a gui menu one so it is recamended for most oeople but it is still v1 like the others
 The script will:
 1. Install Homebrew if missing
 2. Tap `koekeishiya/formulae` (yabai, skhd) and `FelixKratz/formulae` (sketchybar)
