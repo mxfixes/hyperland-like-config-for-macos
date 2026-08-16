@@ -3,9 +3,7 @@
 A "Linux-flavored" macOS setup: Kitty terminal, yabai (tiling WM), skhd (keybinds),
 SketchyBar (status bar), and a `pacman`-syntax wrapper around Homebrew.
 
-Not a real Arch/Hyprland install — this reskins macOS to feel like one. `fastfetch`
-config is intentionally excluded from this repo (kept local/cosmetic only).
-
+Not a real Arch/Hyprland install — this reskins macOS to feel like one.
 ## What's included
 
 | Tool      | Role                          | Config          |
